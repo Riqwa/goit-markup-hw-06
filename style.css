@@ -55,7 +55,6 @@ ul{
 .address_item {}
 
 .address_link {
-        font-weight: 400;
         line-height: 1.5;
         letter-spacing: -0.02em;
         color: #434455;
@@ -115,7 +114,6 @@ ul{
 }
 
 .features_description {
-        font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
@@ -146,8 +144,6 @@ ul{
 }
 
 .team_descrition {
-    font-size: 16px;
-        font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
@@ -173,7 +169,6 @@ ul{
 }
 
 .portfolio_description {
-        font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
 }
@@ -191,7 +186,6 @@ ul{
 }
 
 .footer_text {
-    font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
     color: #F4F4FD;
