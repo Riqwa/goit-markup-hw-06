@@ -25,7 +25,9 @@ ul{
         line-height: 1.17;
         letter-spacing: 0.03em;
         font-style: normal;
+        text-transform: uppercase;
         color: #4d5ae5;
+        
         
 }
 
@@ -54,7 +56,7 @@ color: #404bbf;
 }
 
 .address {
-    font-style: normal
+    font-style: normal;
 }
 
 .address_item {}
@@ -166,7 +168,7 @@ color: #404bbf;
 .team_descrition {
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: #2e2f42;
 }
 
 .portfolio {}
@@ -195,16 +197,13 @@ color: #404bbf;
 .portfolio_description {
         line-height: 1.5;
         letter-spacing: 0.02em;
-        color: #434455;
+        color: #2e2f42;
 }
 
 .footer {
     background-color: #2E2F42;
 }
 
-.logo {}
-
-.logo_name {}
 
 .logo_sec_name{ 
     color: #f4f4fd;
