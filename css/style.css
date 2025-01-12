@@ -121,10 +121,10 @@ address {
 }
 
 .team_item {
-    background-color: #FFFFFF;
+    
 }
 
-.team_block {}
+.team_block {background-color: #FFFFFF;}
 
 .team_photo {}
 
