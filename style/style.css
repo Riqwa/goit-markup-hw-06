@@ -2,7 +2,8 @@ body{
     font-family: Roboto, sans-serif;
     font-style: normal;
     font-weight: 400;
-    color: #2E2F42;
+    color: #434455;
+    background-color: #FFFFFF;
 
 }
 
@@ -18,17 +19,19 @@ ul{
 .nav {}
 
 .logo {
-    font-family: Raleway;
+    font-family: Raleway, sans-serif;
         font-size: 18px;
         font-weight: 700;
         line-height: 1.17;
-        letter-spacing: -0.03em;
+        letter-spacing: 0.03em;
         font-style: normal;
+        color: #4d5ae5;
+        
 }
 
 .logo_name {
 
-    color: #4D5AE5;
+    color: #2e2f42;
 }
 
 
@@ -37,36 +40,38 @@ ul{
 .nav_link{
     font-weight: 500;
     line-height: 1.5;
-    letter-spacing: -0.02em;
+    letter-spacing: 0.02em;
 }
 
 .nav_link:hover {
 
-    color: #4D5AE5;
+    color: #404bbf;
 }
 
-.nav_link:active {
+.nav_link:focus {
 
-    text-decoration: underline;
+color: #404bbf;
 }
 
-.address {}
+.address {
+    font-style: normal
+}
 
 .address_item {}
 
 .address_link {
         line-height: 1.5;
-        letter-spacing: -0.02em;
+        letter-spacing: 0.02em;
         color: #434455;
-        font-style: normal;
+        
 }
 
 .address_link:hover{
-    color: #4D5AE5;
+    color: #404bbf;
 }
 
 .address_link:focus{
-    color: #4D5AE5;
+    color: #404bbf;
 }
 
 .hero {
@@ -79,8 +84,9 @@ ul{
     font-size: 56px;
         font-weight: 700;
         line-height: 1.07;
-        letter-spacing: -0.02em;
+        letter-spacing: 0.02em;
         color: #ffffff;
+        text-align: center;
 }
 
 .hero_button {
@@ -89,6 +95,10 @@ ul{
     width: 169px;
         height: 56px;
         color: #ffffff;
+        font-weight: 500;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        cursor: pointer;
 }
 
 .hero_button:hover{
@@ -110,12 +120,13 @@ ul{
     font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
-        letter-spacing: -0.02em;
+        letter-spacing: 0.02em;
 }
 
 .features_description {
         line-height: 1.5;
         letter-spacing: 0.02em;
+        color: #434455;
 }
 
 
@@ -129,9 +140,15 @@ ul{
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
+        text-align: center;
+        text-transform: capitalize;
 }
 
 .team_item {}
+
+.team_block{
+    background-color: #FFFFFF;
+}
 
 .team_photo {}
 
@@ -146,6 +163,7 @@ ul{
 .team_descrition {
         line-height: 1.5;
         letter-spacing: 0.02em;
+        color: #434455;
 }
 
 .portfolio {}
@@ -155,6 +173,8 @@ ul{
         font-weight: 700;
         line-height: 1.11;
         letter-spacing: 0.02em;
+        text-align: center;
+        text-transform: capitalize;
 }
 
 .portfolio_item {}
@@ -171,6 +191,7 @@ ul{
 .portfolio_description {
         line-height: 1.5;
         letter-spacing: 0.02em;
+        color: #434455;
 }
 
 .footer {
@@ -182,7 +203,7 @@ ul{
 .logo_name {}
 
 .logo_sec_name{ 
-    color: #F4F4FD;
+    color: #f4f4fd;
 }
 
 .footer_text {
