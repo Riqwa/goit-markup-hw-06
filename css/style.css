@@ -5,6 +5,9 @@ body{
         background-color: #FFFFFF;
 
 }
+img{
+    display: block;
+}
 *,
 *::before,
 *::after {
@@ -34,19 +37,20 @@ a{
     display: block;
 }
 .header{
+    border-bottom: 1px solid #e7e9fc;
     
     
 }
 .container{
-    display: flex;
-        justify-content: space-between;  
-        max-width: 1440px;
+        max-width: 1158px;
         padding: 0 15px;
             margin: 0 auto;
 }
 
 .nav {
     display: flex;
+    align-items: center;
+    
 }
 
 
@@ -58,7 +62,7 @@ a{
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:#4d5ae5;
-    margin: 24px 76px 24px 0;
+    margin-right: 76px;
   
 }
 
@@ -70,7 +74,7 @@ a{
 .nav_item {
     display: flex;
     gap: 40px;
-    margin-top: 24px;
+   
    
 }
 
@@ -79,6 +83,7 @@ a{
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
     
 
 }
@@ -98,8 +103,7 @@ address {
 .address_item {
     display: flex;
     gap: 40px;
-    justify-content:center;
-    margin-top: 24px;
+    
     
 }
 
@@ -119,6 +123,8 @@ address {
 .hero {
     background-color: #2e2f42;
     align-content: center;
+    padding: 188px 0;
+   
 
 
 }
@@ -129,7 +135,7 @@ address {
     text-align: center;
     letter-spacing: 0.02em;
     color: #ffffff;
-    margin: 188px 472px 48px;
+    max-width: 496px;
     
     
     
@@ -142,11 +148,11 @@ address {
     letter-spacing: 0.04em;
     color: #ffffff;
     cursor: pointer;
-    padding: 16px 32px;
+    display: block;
+    min-width: 169px;
+    height: 56px;
     border: none;
     border-radius: 4px;
-    margin-left: 636px;
-    margin-bottom: 188px;
 
     
 }
@@ -160,8 +166,11 @@ address {
 }
 
 .features{
-    padding: 120px 156px;
+    padding: 120px 0;
     
+}
+.visually-hidden{
+    display: none;
 }
 
 .features_item {
@@ -169,7 +178,10 @@ address {
     gap: 24px;
 }
 
-.features_link {}
+.features_link {
+    width: calc((100% - 72px) / 4);
+
+}
 
 .features_name {
     font-weight: 500;
@@ -177,7 +189,7 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:#2e2f42;
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .features_description {
@@ -189,7 +201,7 @@ address {
 
 .team {
     background-color: #F4F4FD;
-    height: 732px;
+    padding: 120px 0;
     
     
 }
@@ -201,19 +213,23 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color:#2e2f42;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .team_item {
     display: flex;
     gap: 24px;
-    margin-left: 156px;
+    
     
 }
 
 .team_block {background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0px 0px 4px 4px;
 
+}
+.name_personal{
+    padding: 32px 0;
 }
 
 .team_photo {
@@ -226,7 +242,7 @@ address {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color:#2e2f42;
-    padding-top: 32px;
+    margin-bottom: 8px;
     text-align: center;
 
 }
@@ -235,12 +251,13 @@ address {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:#434455;
-    margin-top: 8px;
     text-align: center;
-    padding-bottom: 32px;
 }
 
-.portfolio {}
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .portfolio_logo {
     font-size: 36px;
@@ -249,19 +266,32 @@ address {
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color:#2e2f42;
-    padding-top: 120px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .portfolio_item {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
+   display: flex;
+flex-wrap: wrap;
+column-gap: 24px;
+row-gap: 48px;
+
       
 
 }
+.portfolio_link{
+    width: calc((100% - 48px) / 3);
+}
+
 
 .portfolio_photo {}
+
+.portfolio_description{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+
+}
 
 .porfolio_name {
     font-weight: 500;
@@ -279,18 +309,30 @@ address {
 
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
-.logo {}
+.logo_footer {
+    font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1.17;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #4d5ae5;
+        display: inline-block;
+        margin-bottom: 16px;
+
+}
 
 .logo_sec_name {
     color: #f4f4fd;
-    padding-top: 100px;
+    
 }
 
 .footer_text {
     line-height: 1.5;
     color:#F4F4FD;
     letter-spacing: 0.02em;
-    padding-bottom: 100px;
+    max-width: 264px;
 }
