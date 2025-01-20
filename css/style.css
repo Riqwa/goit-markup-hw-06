@@ -34,7 +34,7 @@ ul{
 
 a{
     text-decoration: none;
-    display: block;
+    
 }
 .header{
     border-bottom: 1px solid #e7e9fc;
@@ -46,7 +46,7 @@ a{
         max-width: 1158px;
         padding: 0 15px;
             margin: 0 auto;
-            display: flex;
+         
             
 }
 .nav_cont{
@@ -252,9 +252,7 @@ address {
     padding: 32px 0;
 }
 
-.team_photo {
-   
-}
+
 
 .team_name {
     font-weight: 500;
@@ -295,15 +293,15 @@ flex-wrap: wrap;
 column-gap: 24px;
 row-gap: 48px;
 
+
       
 
 }
 .portfolio_link{
     width: calc((100% - 48px) / 3);
+    
 }
 
-
-.portfolio_photo {}
 
 .portfolio_description{
     padding: 32px 16px;
