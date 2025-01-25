@@ -38,6 +38,7 @@ a{
 }
 .header{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 1px 6px 0px #2E2F4214, 0px 1px 1px 0px #2E2F4229, 0px 2px 1px 0px #2E2F4214;;
    
 
     
@@ -98,7 +99,26 @@ a{
     color: #2e2f42;
     padding: 24px 0;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
+
+}
+
+.nav_link.current{
+    position: relative;
+    color: #404bbf;
+
+}
+
+.nav_link.current::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #404bbf;
 
 }
 
@@ -109,6 +129,8 @@ a{
 .nav_link:focus{
     color: #404bbf;
 }
+
+
 
 address {
     font-style: normal;
@@ -130,6 +152,7 @@ address {
     color:#434455;
     padding: 24px 0;
     display: block;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address_link:hover{
@@ -141,8 +164,14 @@ address {
 
 .hero {
     background-color: #2e2f42;
+    background-image: linear-gradient(#2E2F42B2, #2E2F42B2),
+    url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
     align-content: center;
     padding: 188px 0;
+
    
 
 
@@ -208,9 +237,27 @@ address {
         }
 
 
+    
+
+.icon_features{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: #F4F4FD;
+    border: 1px solid #8E8F99;
+    width: 264px;
+    height: 112px;
+    border-radius: 8px;
+    margin: auto;
+    margin-bottom: 8px; 
+    padding: 24px 100px;
+}        
+
+
 .features_item {
     display: flex;
     gap: 24px;
+    flex-shrink: 0;
 }
 
 .features_link {
@@ -261,6 +308,7 @@ address {
 .team_block {background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 2px 1px 0px #2E2F4214;
 
 }
 .name_personal{
@@ -286,6 +334,35 @@ address {
     color:#434455;
     text-align: center;
 }
+
+.social-link{
+    display: flex;
+        gap: 24px;
+        flex-shrink: 0;
+        margin-top: 8px;
+        margin-left: 16px;
+        
+}
+.social-link .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link .link:hover{
+    background-color: #404BBF;
+}
+
+.icon-team{
+    fill: #fff;
+}
+
+
 
 .portfolio {
     padding-top: 120px;
@@ -317,6 +394,37 @@ row-gap: 48px;
     
 }
 
+.portfolio-wrap{
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.portfolio-cover-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    padding-left: 32px;
+    font-size: 16px;
+    color: #fff;
+    font-family: "Roboto"; 
+    background-color: #4D5AE5;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms;
+    
+}
+
+.portfolio_link:hover{
+    box-shadow: 0 2px 1px 0 #2E2F4214, 0 1px 1px 0 #2E2F4214, 0 1px 6px 0 #2E2F4214;
+}
+
+.portfolio_link:hover .portfolio-cover-text{
+transform: translateY(0);
+}
+
+
 
 .portfolio_description{
     padding: 32px 16px;
@@ -344,6 +452,43 @@ row-gap: 48px;
 .footer {
     background-color: #2e2f42;
     padding: 100px 0;
+    
+}
+
+.footer .container{
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-cont{
+    margin-right: 120px;
+}
+
+.footer-link-text{
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.social-link-footer{
+    display: flex;
+        gap: 16px;
+        flex-shrink: 0;
+}
+
+.social-link-footer .link{
+    display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: #4D5AE5;
+        transition: 200ms;
+
+}
+
+.social-link-footer .link:hover{
+    background-color: #31D0AA;
 }
 
 .logo_footer {
@@ -369,4 +514,9 @@ row-gap: 48px;
     color:#F4F4FD;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+
+.footer-link{
+    
+
 }
