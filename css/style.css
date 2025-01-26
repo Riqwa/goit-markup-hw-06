@@ -164,17 +164,13 @@ address {
 
 .hero {
     background-color: #2e2f42;
-    background-image: linear-gradient(#2E2F42B2, #2E2F42B2),
-    url(../images/people-office.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    max-width: 1440px;
     background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
     align-content: center;
     padding: 188px 0;
-
-   
-
-
 }
 
 .hero_name {
@@ -186,10 +182,7 @@ address {
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 48px;
-    
-    
-    
+    margin-bottom: 48px;   
 }
 
 .hero_button {
@@ -204,9 +197,8 @@ address {
     height: 56px;
     border: none;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
     margin: 0 auto;
-
-
     
 }
 
@@ -222,35 +214,29 @@ address {
     padding: 120px 0;
     
 }
-.visually-hidden{
+.visually_hidden{
             position: absolute;
             width: 1px;
             height: 1px;
             margin: -1px;
             border: 0;
             padding: 0;
-    
             white-space: nowrap;
             clip-path: inset(100%);
             clip: rect(0 0 0 0);
             overflow: hidden;
         }
 
-
-    
-
 .icon_features{
-    display: block;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #F4F4FD;
     border: 1px solid #8E8F99;
-    width: 264px;
     height: 112px;
-    border-radius: 8px;
-    margin: auto;
+    border-radius: 4px;
     margin-bottom: 8px; 
-    padding: 24px 100px;
+    
 }        
 
 
@@ -308,7 +294,9 @@ address {
 .team_block {background-color: #FFFFFF;
     width: calc((100% - 72px) / 4);
     border-radius: 0px 0px 4px 4px;
-    box-shadow: 0px 2px 1px 0px #2E2F4214;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 
 }
 .name_personal{
@@ -335,15 +323,16 @@ address {
     text-align: center;
 }
 
-.social-link{
+.social_link{
     display: flex;
         gap: 24px;
         flex-shrink: 0;
         margin-top: 8px;
-        margin-left: 16px;
+    
+        justify-content: center;
         
 }
-.social-link .link {
+.social_link .link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -351,15 +340,19 @@ address {
     height: 40px;
     border-radius: 50%;
     background-color: #4D5AE5;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-link .link:hover{
+.social_link .link:hover{
     background-color: #404BBF;
 }
 
-.icon-team{
-    fill: #fff;
+.social_link .link:focus {
+    background-color: #404BBF;
+}
+
+.icon_team{
+    fill: #f4f4fd;
 }
 
 
@@ -379,7 +372,7 @@ address {
     margin-bottom: 72px;
 }
 
-.portfolio_item {
+.portfolio_list {
    display: flex;
 flex-wrap: wrap;
 column-gap: 24px;
@@ -389,7 +382,7 @@ row-gap: 48px;
       
 
 }
-.portfolio_link{
+.portfolio_item{
     width: calc((100% - 48px) / 3);
     
 }
@@ -404,23 +397,26 @@ row-gap: 48px;
     position: absolute;
     top: 0;
     left: 0;
-    padding-top: 40px;
-    padding-left: 32px;
+    padding: 40px 32px;
     font-size: 16px;
-    color: #fff;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;;
     font-family: "Roboto"; 
     background-color: #4D5AE5;
     height: 100%;
     transform: translateY(100%);
-    transition: transform 250ms;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
-.portfolio_link:hover{
-    box-shadow: 0 2px 1px 0 #2E2F4214, 0 1px 1px 0 #2E2F4214, 0 1px 6px 0 #2E2F4214;
+.portfolio_item:hover{
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);;
 }
 
-.portfolio_link:hover .portfolio-cover-text{
+.portfolio_item:hover .portfolio-cover-text{
 transform: translateY(0);
 }
 
@@ -467,15 +463,18 @@ transform: translateY(0);
 .footer-link-text{
     color: #fff;
     margin-bottom: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
-.social-link-footer{
+.footer_list{
     display: flex;
         gap: 16px;
         flex-shrink: 0;
 }
 
-.social-link-footer .link{
+.footer_list .link{
     display: flex;
         justify-content: center;
         align-items: center;
@@ -483,11 +482,15 @@ transform: translateY(0);
         height: 40px;
         border-radius: 50%;
         background-color: #4D5AE5;
-        transition: 200ms;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.social-link-footer .link:hover{
+.footer_list .link:hover{
+    background-color: #31D0AA;
+}
+
+.footer_list .link:focus {
     background-color: #31D0AA;
 }
 
