@@ -20,7 +20,7 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a class="logo" href="./index.html">Web<span class="logo_name">Studio</span></a>
+                    <a class="logo" href="./index.html">Web<span class="logo_name">Studio</span></a>
                 <ul class="nav_item">
                     <li><a class="nav_link current" href="./index.html">Studio</a></li>
                     <li><a class="nav_link" href="">Portfolio</a></li>
@@ -33,13 +33,70 @@
                     <li><a class="address_link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+
+            <button type="button" class="header_btn" data-menu-open>
+                <svg class="burger_btn" width="24" height="24">
+                  <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
         </div>
+
+        <div class="mobile-menu" data-menu>
+            <div class="mobile-menu-container">
+                <button class="modal_close" data-menu-close>
+                    <svg class="closed" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg></button>
+                    <nav class="menu-nav-mob">
+                        <ul class="nav_list_mob">
+                            <li class="nav-item-mob"><a class="nav_link_mob current" href="./index.html">Studio</a></li>
+                            <li class="nav-item-mob"><a class="nav_link_mob" href="">Portfolio</a></li>
+                            <li class="nav-item-mob"><a class="nav_link_mob" href="">Contacts</a></li>
+                        </ul>
+                    </nav>
+                    <address class="address_mob">
+                        <ul class="address_list_mob">
+                            <li class="address-item-mob "><a class="address_link_mob current" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                            <li class="address-item-mob"><a class="address_link_mob" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                        </ul>
+                    </address>
+                    <ul class="menu_list">
+                        <li class="menu_item"><a href="https://www.instagram.com/" target="_blank" class="link">
+                                <svg class="icon_menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu_item"><a href="https://x.com/?lang=ru&mx=2" target="_blank" class="link">
+                                <svg class="icon_menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu_item"><a href="https://www.facebook.com/" target="_blank" class="link">
+                                <svg class="icon_menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="menu_item"><a href="https://ua.linkedin.com/" target="_blank" class="link">
+                                <svg class="icon_menu" width="24" height="24">
+                                    <use href="./images/icons.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+            </div>
+        </div>
+
     </header>
+
     <main>
         <section class="hero">
             <div class="container">
                 <h1 class="hero_name">Effective Solutions for Your Business</h1>
-                <button class="hero_button" type="button">Order Service</button>
+                <button class="hero_button" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
 
@@ -101,7 +158,7 @@
             <div class="container">
                 <h2 class="team_logo">Our Team</h2>
                 <ul class="team_item">
-                    <li class="team_block"><img class="team_photo" src="./images/mark_guerrero.jpg" alt="Mark Guerrero"
+                    <li class="team_block"><img class="team_photo" srcset="./images/mark_guerrero.jpg 1x, ./images/mark2x.jpg 2x" src="./images/mark_guerrero.jpg" alt="Mark Guerrero"
                             width="264" height="260">
                         <div class="name_personal">
                             <h3 class="team_name">Mark Guerrero</h3>
@@ -135,7 +192,7 @@
                         </div>
 
                     </li>
-                    <li class="team_block"><img class="team_photo" src="./images/tom_ford.jpg" alt="Tom Ford"
+                    <li class="team_block"><img class="team_photo" srcset="./images/tom_ford.jpg 1x, ./images/tom2x.jpg 2x" src="./images/tom_ford.jpg" alt="Tom Ford"
                             width="264" height="260">
                         <div class="name_personal">
                             <h3 class="team_name">Tom Ford</h3>
@@ -168,7 +225,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team_block"><img class="team_photo" src="./images/camila_garcia.jpg" alt="Camila Garcia"
+                    <li class="team_block"><img class="team_photo" srcset="./images/camila_garcia.jpg 1x, ./images/camila2x.jpg 2x" src="./images/camila_garcia.jpg" alt="Camila Garcia"
                             width="264" height="260">
                         <div class="name_personal">
                             <h3 class="team_name">Camila Garcia</h3>
@@ -201,7 +258,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="team_block"><img class="team_photo" src="./images/daniel_wilson.jpg" alt="Daniel Wilson"
+                    <li class="team_block"><img class="team_photo" srcset="./images/daniel_wilson.jpg 1x, ./images/daniel2x.jpg 2x" src="./images/daniel_wilson.jpg" alt="Daniel Wilson"
                             width="264" height="260">
                         <div class="name_personal">
                             <h3 class="team_name">Daniel Wilson</h3>
@@ -244,7 +301,7 @@
                 <ul class="portfolio_list">
                     <li class="portfolio_item">
                         <div class="portfolio-wrap">
-                            <img class="portfolio_photo" src="./images/backing_app.jpg" alt="A picture with a website mockup." width="360">
+                            <img class="portfolio_photo" srcset="./images/backing_app.jpg 1x, ./images/banking2x.jpg 2x" src="./images/backing_app.jpg" alt="A picture with a website mockup." width="288">
                             <p class="portfolio-cover-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
@@ -259,8 +316,8 @@
                     </li>
                     <li class="portfolio_item">
                         <div class="portfolio-wrap">
-                        <img class="portfolio_photo" src="./images/cashless.jpg"
-                            alt="An image of a phone scanning a QR code." width="360">
+                        <img class="portfolio_photo" srcset="images/cashless.jpg 1x, images/cashless2x.jpg 2x" src="./images/cashless.jpg"
+                            alt="An image of a phone scanning a QR code." width="288">
                             <p class="portfolio-cover-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
@@ -275,8 +332,8 @@
                     </li>
                     <li class="portfolio_item">
                         <div class="portfolio-wrap">
-                        <img class="portfolio_photo" src="./images/maditation.jpg"
-                            alt="image with a notebook and a phone" width="360">
+                        <img class="portfolio_photo" srcset="images/maditation.jpg 1x, images/meditation2x.jpg 2x" src="./images/maditation.jpg"
+                            alt="image with a notebook and a phone" width="288">
                             <p class="portfolio-cover-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
@@ -291,8 +348,8 @@
                     </li>
                     <li class="portfolio_item">
                         <div class="portfolio-wrap">
-                        <img class="portfolio_photo" src="./images/taxi_service.jpg"
-                            alt="image with a car" width="360">
+                        <img class="portfolio_photo" srcset="images/taxi_service.jpg 1x, images/taxi2x.jpg 2x" src="./images/taxi_service.jpg"
+                            alt="image with a car" width="288">
                             <p class="portfolio-cover-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
@@ -307,8 +364,8 @@
                     </li>
                     <li class="portfolio_item">
                         <div class="portfolio-wrap">
-                        <img class="portfolio_photo" src="./images/screen_ill.jpg"
-                            alt="a picture with a phone" width="360">
+                        <img class="portfolio_photo" srcset="images/screen_ill.jpg 1x, images/screen2x.jpg 2x" src="./images/screen_ill.jpg"
+                            alt="a picture with a phone" width="288">
                             <p class="portfolio-cover-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
@@ -323,8 +380,8 @@
                     </li>
                     <li class="portfolio_item">
                         <div class="portfolio-wrap">
-                        <img class="portfolio_photo" src="./images/online_coursice.jpg"
-                            alt="image with a girl" width="360">
+                        <img class="portfolio_photo" srcset="images/online_coursice.jpg 1x, images/online2x.jpg 2x" src="./images/online_coursice.jpg"
+                            alt="image with a girl" width="288">
                             <p class="portfolio-cover-text">
                                 14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App ·
                                 Exotic Fruit Ecommerce App ·
@@ -395,9 +452,9 @@
       
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop" data-modal>
         <div class="modal">
-            <button type="button" class="modal_close">
+            <button type="button" class="modal_close" data-modal-close>
             <svg class="closed" width="8" height="8">
               <use href="./images/icons.svg#icon-close"></use>
             </svg></button>
@@ -453,7 +510,10 @@
                               <use href="./images/icons.svg#icon-done"></use>
                             </svg>
                         </span>
-                        I accept the terms and conditions of the <a href="" class="form_checkbox_link">Privacy Policy</a>
+                        <span class="label_text">
+                            I accept the terms and conditions of the <a href="" class="form_checkbox_link">Privacy Policy</a>
+                        </span>
+                        
                     </label>
                 </div>
                
@@ -465,7 +525,8 @@
 
         </div>
     </div>
-
+<script src="js/menu.js"></script>
+<script src="js/modal.js"></script>
 </body>
 
 </html>
