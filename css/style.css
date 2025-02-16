@@ -202,20 +202,19 @@ a {
     margin-top: 48px;
 
 }
-.link{
+
+.link {
     display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: #4D5AE5;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu_item {
-    
-}
+.menu_item {}
 
 .menu_link .link:hover {
     background-color: #404BBF;
@@ -587,8 +586,8 @@ a {
 
 @media screen and (min-width: 1158px) {
     .features {
-            padding: 120px 0;
-        }
+        padding: 120px 0;
+    }
 
     .features_link {
         width: calc((100% - 72px) / 4);
@@ -742,12 +741,13 @@ a {
 
 @media screen and (min-width:1158px) {
     .team {
-            padding: 120px 0;
-        }
-         .team_item {
-             row-gap: 0;
-             column-gap: 24px;
-         }
+        padding: 120px 0;
+    }
+
+    .team_item {
+        row-gap: 0;
+        column-gap: 24px;
+    }
 }
 
 
@@ -787,7 +787,7 @@ a {
 
 }
 
-.portfolio_photo{
+.portfolio_photo {
     max-width: 100%;
     height: auto;
 }
@@ -812,9 +812,10 @@ a {
 
 .portfolio_item:hover .portfolio-cover-text {
     transform: translateY(0);
-    
+
 }
-.portfolio_item:hover{
+
+.portfolio_item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
@@ -861,8 +862,9 @@ a {
 
 @media screen and (min-width:1158px) {
     .portfolio {
-            padding: 120px 0;
-        }
+        padding: 120px 0;
+    }
+
     .portfolio_list {
         row-gap: 48px;
     }
@@ -877,7 +879,7 @@ a {
 
 
 
-    
+
 }
 
 
@@ -898,8 +900,6 @@ a {
     align-items: center;
 
     margin-bottom: 72px;
-
-
 }
 
 .footer-link-text {
@@ -925,7 +925,6 @@ a {
     border-radius: 50%;
     background-color: #4D5AE5;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .footer_list .link:hover {
@@ -1083,19 +1082,20 @@ a {
 }
 
 @media screen and (min-width:1158px) {
-    .footer{
+    .footer {
         padding: 100px 0;
     }
+
     .footer .container {
         flex-wrap: nowrap;
         padding-left: 15px;
         align-items: baseline;
         column-gap: normal;
-       
+
     }
 
 
-    .footer_soc_link{
+    .footer_soc_link {
         margin-left: 120px;
 
     }
@@ -1104,10 +1104,10 @@ a {
         margin-left: 80px;
     }
 
-        .footer_input{
-            width: 264px;
-        }
- 
+    .footer_input {
+        width: 264px;
+    }
+
 
 }
 
